@@ -1,0 +1,148 @@
+.resumePage{
+    animation:resumePage 0.4s;
+}
+@keyframes resumePage {
+    0%{
+        transform: translate(-100%);
+        opacity: 0;
+    }
+}
+/* Resume card */
+.resumeContainer{
+    margin:2rem auto;
+    width:20vw;
+    padding:0.5rem;
+    background-color: #5b687e;
+    border-top:2px solid #808ea7;
+    border-left:2px solid #808ea7;
+    border-bottom:2px solid #3b4452;
+    border-right:2px solid #3b4452;
+    box-shadow: 0.2rem 0.2rem 0.5rem #a1a1a1;
+    border-radius: 0.2rem;
+    transition: transform 0.2s ease-in-out;
+    display:flex;
+    justify-content: center;
+}
+.resumeContainer:hover{
+    transform: scale(1.02);
+}
+.resumeContainer img{
+    margin-top:0.5rem;
+    width:18vw;
+    border:1px solid #3b4452;
+}
+.resumeLink{
+    color:white;
+    text-align: center;
+    font-weight:400;
+    text-decoration: none;
+}
+
+/* Skills */
+.skillContainer{
+    display:flex;
+    justify-content: space-around;
+    width:52vw;
+    margin:0 auto 7rem;
+}
+.skills{
+    /* width:29vw; */
+    padding:1rem;
+    /* background-color: #5b687e; */
+    /* background-color: #5b74a0; */
+    /* box-shadow: 0.1rem 0.1rem 0.1rem #3e4655 inset; */
+    /* border-right:2px solid rgb(233, 233, 233);
+    border-bottom:2px solid rgb(233, 233, 233); */
+    /* border:2px solid #f48023; */
+    /* text-align: center; */
+}
+.skills *{
+    color:#3c4554;
+    
+}
+.skills h2{
+    font-weight:500;
+    animation:skill 1s;
+}
+.skills li{
+    list-style-type:none;
+    padding:0.2rem;
+    font-weight: 400;
+    /* animation:skill 1s; */
+
+}
+.darkSkill{
+    /* background-color: #4c5769; */
+    /* background-color: #536b96; */
+    
+}
+.skill{
+    margin-top:1rem;
+}
+.skillLevel{
+    
+    font-size:1.2rem;
+    font-weight:500;
+}
+/* @keyframes skill {
+    0%{
+        transform:translate(200%) scale(3);
+        opacity:0;
+
+    }
+   
+} */
+
+@media screen and (max-width:1000px) {
+    .resumeContainer{
+        width:80vw;
+    }
+    .resumeContainer img{
+        width:78vw;
+    }
+    .skills{
+        width:80vw;
+        border-top:2px solid #919191;
+    }
+    .skillContainer{
+        width:80vw;
+    }
+}
+/* @media screen and (max-width:800px) {
+    .skillContainer{
+        width:90vw;
+    }
+    .skills{
+        width:43vw;
+    }
+} */
+@media screen and (max-width:500px) {
+    .resumePage{
+        animation:resumePage 0.2s;
+    }
+    .resumeContainer{
+        width:100vw;
+    }
+    .resumeContainer img{
+        width:100vw;
+    }
+    .skillContainer{
+        display:block;
+        width:100vw;
+        
+    }
+    .skills{
+        width:100vw;
+        border-radius: 0;
+        border-right:none;
+        margin-top:1rem;
+        box-shadow: 0rem 0.1rem 0.1rem #919191 inset;
+    }
+    .resumeBackground{
+        /* box-shadow:0rem 0.1rem 0.1rem #919191 inset;
+        border-right:none;
+        border-left:none;
+        width:100vw;
+        margin:1rem 0; */
+    }
+}

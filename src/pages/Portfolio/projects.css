@@ -1,0 +1,291 @@
+/* Project section */
+.projectContainer,.projectDetailContainer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    width:80vw;
+    margin:2rem auto 8rem auto;
+    /* min-height:100vh; */
+}
+.projectCard {
+    /* background-color: #000000; */
+    margin:1rem;
+    width:400px;
+    height:300px;
+    text-align: center;
+    border-radius:0.2rem;
+    padding:1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem gray;
+    transition:transform 0.3s ease-in-out;
+    position:relative;
+    animation:projects 0.5s;
+}
+@keyframes projects {
+    0%{
+        transform: translate(-100%);
+        opacity: 0;
+    }
+}
+.projectDetailCard{
+    margin-top:1rem;
+    width:800px;
+    height:600px;
+    text-align: center;
+    border-radius:0.3rem;
+    border:2px solid #f48023;
+    /* padding:1rem; */
+    /* box-shadow: 0.5rem 0.5rem 0.5rem gray inset;
+    border-bottom:5px solid rgb(255, 255, 255);
+    border-right:5px solid rgb(255, 255, 255); */
+    position:relative;
+}
+.projectPicture{
+    height:100%;
+    width:100%;
+}
+.projectInfo{
+    margin-top:4rem;
+    /* width:700px; */
+    text-align: center;
+}
+.projectSummary{
+
+    padding:1rem;
+}
+/* .techList{
+    width: fit-content;
+    margin:auto;
+    text-align: start;
+} */
+/* .projectInfo li{
+    list-style-type:'- ';
+} */
+.projectCard::before,.projectPicture::before{
+    content:'';
+    background-color: #000000;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: -1;
+    border-radius: 0.2rem;
+}
+
+.projectCard:hover{
+    transform: scale(1.05);
+    background-color: #ffffff;
+}
+
+.projectCard a{
+    text-decoration: none;
+}
+
+/* Name displayed before hover */
+.projectName{
+    font-size: 1.5rem;
+    font-weight:400;
+    background-color: #515151;
+    color:#eeeded;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    border-bottom-left-radius:0.2rem;
+    border-bottom-right-radius:0.2rem;
+    padding:0.5rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.74);
+    border-top:2px solid #fec697;
+}
+.projectTitle{
+    font-weight:500;
+    font-size: 2.5rem;
+    margin-top:1rem;
+    text-align: center;
+}
+.projectInfo p {
+    font-size:1.3rem;
+}
+
+#disclaimer{
+    margin:0.5rem;
+    font-size: 1rem;
+}
+.projectCardInfo{
+    width: 100%;
+    height:290px;
+    display:flex;
+    justify-content: center;
+    align-items:flex-end;
+    border-radius: 0.2rem;
+}
+.projectTech{
+    margin-top:2rem;
+}
+.projectLinkContainer{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Image for projects */
+.projectOne::after{
+    background-image: url(/public/images/projectOneMain.png);
+}
+.projectTwo::after{
+    background-image: url(/public/images/projectTwoMain.png);
+}
+.projectThree::after{
+    background-image: url(/public/images/projectThreeMain.png);
+}
+.projectFour::after{
+    background-image: url(/public/images/projectFourMain.png);
+}
+.projectFive::after{
+    background-image: url(/public/images/projectFiveMain.png);
+}
+.projectSix::after{
+    background-image: url(/public/images/projectSixMain.png);
+}
+
+/* Placement of image for project */
+.projectOne::after,.projectTwo::after,.projectThree::after,.projectFour::after,.projectFive::after,.projectSix::after {
+    content:"";
+    position:absolute;
+    background-size: cover;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: -1;
+    background-position: center;
+    border-radius: 0.2rem;
+
+}
+
+/* Dulls image on hover */
+.projectOne:hover::after,.projectTwo:hover::after,.projectThree:hover::after,.projectFour:hover::after,.projectFive:hover::after,.projectSix:hover::after {
+    opacity:0.6;
+}
+
+/* Deployed app link */
+.projectDeployed{
+    padding:0.5rem 1rem;
+    font-size: 1rem;
+    font-weight:400;
+    background-color: #3f3f3f;
+    color:#eeeded;
+    border-radius:0.3rem;
+    border-top:2px solid #fec697;
+    border-left:2px solid #fec697;
+    border-bottom:2px solid #895226;
+    border-right:2px solid #895226;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(24, 24, 24);
+    transition:tranform 0.3s ease-in-out;
+    position:relative;
+}
+.projectDeployed:hover::after{
+    content:"Deployed";
+    position: absolute;
+    top:-80%;
+    left:50%;
+    background-color: #000000;
+    border-radius:0.1rem;
+    padding:0.2rem;
+    opacity: 0.7;
+    font-size: 0.9rem;
+    transform:translateX(-50%);
+}
+
+/* Github link */
+.projectCode{
+    width:2.5rem;
+    background-color: #3f3f3f;
+    color:#eeeded;
+    border-radius:0.3rem;
+    border-top:2px solid #fec697;
+    border-left:2px solid #fec697;
+    border-bottom:2px solid #895226;
+    border-right:2px solid #895226;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(24, 24, 24);
+    padding:0.1rem;
+    transition:transform 0.3s ease-in-out;
+}
+.codeLink{
+    position:relative;
+    height:100%;
+}
+.codeLink:hover::after{
+    content:"Source Code";
+    color:white;
+    width:6rem;
+    position: absolute;
+    top:-240%;
+    left:-1.9rem;
+    background-color: #000000;
+    border-radius:0.1rem;
+    padding:0.2rem;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+.projectBtnContainer{
+    /* margin:1rem; */
+    display:flex;
+    justify-content: center;
+}
+.projectBtn{
+    padding:0.5rem 2rem;
+    margin:1rem 2rem;
+    border-radius:0.2rem;
+    /* border-top:3px solid #fec697;
+    border-left:3px solid #fec697;
+    border-bottom:3px solid #895226;
+    border-right:3px solid #895226; */
+    background-color: #425472;
+    border:1px solid #f48023;
+    color:#eeeded;
+    font-size:1.1rem;
+    box-shadow:0.2rem 0.2rem 0.2rem gray;
+    transition: transform 0.2s ease-in-out;
+}
+.projectBtn:hover{
+    transform:scale(1.02);
+    color:white;
+    background-color: #5b687e;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px) {
+    .projectDetailCard{
+        width:80vw;
+        height:60vw;
+    }
+}
+@media screen and (max-width:414px) {
+    
+    .projectCard{
+        margin:2rem 0;
+        width:99vw;
+        height:75vw;
+        animation:projects 0.2s;
+
+    }
+    .projectName{
+        border-bottom-left-radius: 0.1rem;
+        border-bottom-right-radius: 0.1rem;
+    }
+    .projectCard:hover{
+        transform: scale(1);
+        
+    }
+    .projectDetailContainer{
+        width:100vw;
+        display:block;
+    }
+    .projectDetailCard{
+        width:100vw;
+        height:300px;
+    }
+
+}

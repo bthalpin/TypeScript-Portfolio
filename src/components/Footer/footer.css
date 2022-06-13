@@ -1,0 +1,21 @@
+.footer{
+    background-color: #5b687e;
+    padding:0.5rem;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    border-top:2px solid #f48023;
+}
+.footerContainer{
+    margin:auto;
+    width:60%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footerContainer a{
+    /* height:3rem; */
+}
+.githubLogo,.linkedInLogo,.emailLink{
+    height:40px;
+}
