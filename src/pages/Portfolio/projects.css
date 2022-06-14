@@ -171,7 +171,7 @@
 }
 
 /* Dulls image on hover */
-.projectOne:hover::after,.projectTwo:hover::after,.projectThree:hover::after,.projectFour:hover::after,.projectFive:hover::after,.projectSix:hover::after,.projectSeven:hover::after {
+.projectOne:hover::after,.projectTwo:hover::after,.projectThree:hover::after,.projectFour:hover::after,.projectFive:hover::after,.projectSix:hover::after,.projectSeven:hover::after,.projectEight:hover::after {
     opacity:0.6;
 }
 
