@@ -148,9 +148,12 @@
 .projectSix::after{
     background-image: url(/public/images/projectSixMain.png);
 }
+.projectSeven::after{
+    background-image: url(/public/images/about-page.png);
+}
 
 /* Placement of image for project */
-.projectOne::after,.projectTwo::after,.projectThree::after,.projectFour::after,.projectFive::after,.projectSix::after {
+.projectOne::after,.projectTwo::after,.projectThree::after,.projectFour::after,.projectFive::after,.projectSix::after,.projectSeven::after {
     content:"";
     position:absolute;
     background-size: cover;

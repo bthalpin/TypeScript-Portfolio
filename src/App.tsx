@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import { About, Portfolio, Contact, Resume,ProjectDetails } from './components/pages';
+import { About, Portfolio, Contact, Resume,ProjectDetails } from './pages';
 import {Header, Footer} from './components'
 
 const App = () => {

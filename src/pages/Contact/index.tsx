@@ -2,21 +2,22 @@ import React, {useState,useRef,useEffect} from 'react';
 import emailjs from 'emailjs-com'
 import './contact.css';
 
+
 function Contact () {
     const [name,setName] = useState('')
     const [email,setEmail] = useState('')
     const [message,setMessage] = useState('')
     const [errorMessage,setErrorMessage] = useState('')
     const [confirmationMessage,setConfimationMessage] = useState('')
-    const form = useRef();
+    const form = useRef<HTMLFormElement>(null);
 
     useEffect(()=>{
         setConfimationMessage('')
     },[])
     // Updates the state when something is typed
-    const handleInput = (e) => {
+    const handleInput = ({target}:React.ChangeEvent<HTMLInputElement|HTMLTextAreaElement>) => {
         
-        const {name,value} = e.target
+        const {name,value} = target
         if (name === 'name'){
             setName(value)
         }
@@ -29,8 +30,8 @@ function Contact () {
     }
 
     // Displays error message if input is selected and then unselected without entering the appropriate value
-    const checkInput = (e) => {
-        const {name,value} = e.target
+    const checkInput = ({target}:React.ChangeEvent<HTMLInputElement|HTMLTextAreaElement>) => {
+        const {name,value} = target
         
         if (name === 'name'){
             if (value===''){
@@ -60,13 +61,15 @@ function Contact () {
         setConfimationMessage('Message sent.  I will be in touch shortly.  Thank you for your interest.')
     }
     
-    const sendEmail = (e) => {
+    const sendEmail = (e:React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (!/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(.\w{2,3})+$/.test(email)){
             setErrorMessage('Invalid Email')
             return
         }
-         emailjs.sendForm('service_czkp25u', 'template_ojdfldr', form.current, 'BexAwkXyGw4j9GAnQ')
+        const formInfo=form.current?form.current:''
+        
+         emailjs.sendForm('service_czkp25u', 'template_ojdfldr',  formInfo, 'BexAwkXyGw4j9GAnQ')
           .then((result) => {
               sentEmail()
           }, (error) => {
@@ -76,7 +79,7 @@ function Contact () {
 
     return (
         <div>
-            <form ref={form}  onSubmit={sendEmail} className="contactContainer">
+            <form  ref={form} onSubmit={sendEmail} className="contactContainer">
                 
                 <label htmlFor='name'>Name: </label>
                 <input

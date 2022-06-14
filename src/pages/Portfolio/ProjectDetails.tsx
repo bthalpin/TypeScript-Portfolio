@@ -19,14 +19,22 @@ function ProjectDetails () {
 
             <div className="projectDetailContainer">
                 <div className='projectDetailCard'>  
+                    {numId===6?
+                        <div className={`projectPicture ${projectData[numId].class}`}></div>
+                    :
                     <a href={projectData[numId].deployed}>
                         <div className={`projectPicture ${projectData[numId].class}`}></div>
                     </a>
+                    }
         
                     <div className="projectBtnContainer">
+                        {projectData[numId].deployed === '#/Project/6'?
+                        <></>
+                        :
                         <div>
                             <button onClick={()=>window.location.href=projectData[numId].deployed} className="projectBtn">Demo</button>
                         </div>
+                        }
 
                         <div>
                             <button onClick={()=>window.location.href=projectData[numId].github} className="projectBtn">Code</button>

@@ -57,4 +57,13 @@ export const projectData = [
         disclaimer:'*This app uses Heroku free tier for the node server.  The server may take a moment to start.'
 
     },
+    {
+        name:'This Portfolio Site',
+        deployed:'#/Project/6',
+        github:'https://github.com/bthalpin/TypeScript-Portfolio',
+        class:'projectSeven',
+        summary:"This portfolio site was created originally with HTML/CSS, JavaScript, and React, but I recreated it using TypeScript.",
+        technology:'HTML/CSS, TypeScript, React, React Router, EmailJS',
+        disclaimer: ''
+    }
 ]
