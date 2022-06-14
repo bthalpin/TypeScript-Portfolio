@@ -131,29 +131,32 @@
 
 /* Image for projects */
 .projectOne::after{
-    background-image: url(/public/images/projectOneMain.png);
+    background-image: url(/public/images/projectSevenMain.png);
 }
 .projectTwo::after{
-    background-image: url(/public/images/projectTwoMain.png);
+    background-image: url(/public/images/projectOneMain.png);
 }
 .projectThree::after{
-    background-image: url(/public/images/projectThreeMain.png);
+    background-image: url(/public/images/projectTwoMain.png);
 }
 .projectFour::after{
-    background-image: url(/public/images/projectFourMain.png);
+    background-image: url(/public/images/projectThreeMain.png);
 }
 .projectFive::after{
-    background-image: url(/public/images/projectFiveMain.png);
+    background-image: url(/public/images/projectFourMain.png);
 }
 .projectSix::after{
-    background-image: url(/public/images/projectSixMain.png);
+    background-image: url(/public/images/projectFiveMain.png);
 }
 .projectSeven::after{
+    background-image: url(/public/images/projectSixMain.png);
+}
+.projectEight::after{
     background-image: url(/public/images/about-page.png);
 }
 
 /* Placement of image for project */
-.projectOne::after,.projectTwo::after,.projectThree::after,.projectFour::after,.projectFive::after,.projectSix::after,.projectSeven::after {
+.projectOne::after,.projectTwo::after,.projectThree::after,.projectFour::after,.projectFive::after,.projectSix::after,.projectSeven::after,.projectEight::after{
     content:"";
     position:absolute;
     background-size: cover;
@@ -168,7 +171,7 @@
 }
 
 /* Dulls image on hover */
-.projectOne:hover::after,.projectTwo:hover::after,.projectThree:hover::after,.projectFour:hover::after,.projectFive:hover::after,.projectSix:hover::after {
+.projectOne:hover::after,.projectTwo:hover::after,.projectThree:hover::after,.projectFour:hover::after,.projectFive:hover::after,.projectSix:hover::after,.projectSeven:hover::after {
     opacity:0.6;
 }
 

@@ -28,7 +28,7 @@ function ProjectDetails () {
                     }
         
                     <div className="projectBtnContainer">
-                        {projectData[numId].deployed === '#/Project/6'?
+                        {projectData[numId].deployed === '#/Project/7'?
                         <></>
                         :
                         <div>
