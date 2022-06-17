@@ -7,7 +7,7 @@ const Resume = () => {
             <div className="resumeBackground">
 
                 <div className="resumeContainer">
-                    <a className="resumeLink" href="/documents/Brian-Halpin-Resume-2022.pdf" download>
+                    <a className="resumeLink" href="/documents/Brian-Halpin-Resume.pdf" download>
                         
                         <p>DOWNLOAD RESUME</p>
                         <img src="/images/Resume.png" alt="Resume"></img>
