@@ -33,10 +33,6 @@
     text-align: center;
     border-radius:0.3rem;
     border:2px solid #f48023;
-    /* padding:1rem; */
-    /* box-shadow: 0.5rem 0.5rem 0.5rem gray inset;
-    border-bottom:5px solid rgb(255, 255, 255);
-    border-right:5px solid rgb(255, 255, 255); */
     position:relative;
 }
 .projectPicture{
@@ -45,21 +41,12 @@
 }
 .projectInfo{
     margin-top:4rem;
-    /* width:700px; */
     text-align: center;
 }
 .projectSummary{
 
     padding:1rem;
 }
-/* .techList{
-    width: fit-content;
-    margin:auto;
-    text-align: start;
-} */
-/* .projectInfo li{
-    list-style-type:'- ';
-} */
 .projectCard::before,.projectPicture::before{
     content:'';
     background-color: #000000;
