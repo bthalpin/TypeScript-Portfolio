@@ -6,7 +6,7 @@ export const projectData = [
         class:'projectOne',
         summary:"In the fast paced job hunting world, it can be difficult to keep track of all the information for the jobs that you are applying to. JobTracker is an easy to use app where you can save job postings to allow you to quickly and easily organize your job opportunities. Make use of the job post scraping feature to quickly grab some information from the posting to help you fill out the description.",
         technology:'HTML/CSS, JavaScript, React, React Router, MongoDB, Mongoose, Node, Express, bcrypt, JSON Web Tokens, Node-Fetch, Cheerio',
-        disclaimer: '*This app is deployed on Heroku free server.  The server may take a moment to start.'
+        disclaimer: ''
     },
     {
         name:'Raffles of Love',
@@ -15,7 +15,7 @@ export const projectData = [
         class:'projectTwo',
         summary:"Raffles of Love is a charity raffle page.  Each participating charity has a page where they can raffle off products and share information about their organization.  Buying a ticket will take you to the Stripe checkout page (This is a demo app.  Enter card 4242 repeating for the test card. This app is not affiliated with these charities, and no real products are being raffled off).  Once all of the raffle tickets are sold for an item, a winning ticket will be selected.  If a user's account is upgraded to a charity admin, they will be given a blank charity to edit and have the ability to create their own raffles (user: charityAdmin@gmail.com pass: 12345678 is currently a demo charity admin).",
         technology:'HTML/CSS, React-Bootstrap, JavaScript, React, Apollo, GraphQL, Mongoose, Node, Express, bcrypt, JSON Web Tokens, Stripe',
-        disclaimer: '*This app is deployed on Heroku free server.  The server may take a moment to start.'
+        disclaimer: ''
     },
     {
         name:'SnapShot',
@@ -24,7 +24,7 @@ export const projectData = [
         class:'projectThree',
         summary:"A brand new social app where you can unlock a new world of networking through posting pictures that represent who you are and what you stand for. Users can browse other members posts and leave a comment if you see something you like! Bet you can't wait to sign up!",
         technology:'HTML/CSS, Bootstrap, JavaScript, Handlebars, Node, Express, MySQL, Sequelize',
-        disclaimer:'*This app is deployed on Heroku free server.  The server may take a moment to start.'
+        disclaimer:''
     },
     {
         name:'What Movie Was That?',
