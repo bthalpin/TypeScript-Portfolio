@@ -4,7 +4,7 @@ export const projectData = [
         deployed:'https://job-tracker-bh.herokuapp.com/home',
         github:'https://github.com/bthalpin/Job-Tracker',
         class:'projectOne',
-        summary:"In the fast paced job hunting world, it can be difficult to keep track of all the information for the jobs that you are applying to. JobTracker is an easy to use app where you can save job postings to allow you to quickly and easily organize your job opportunities. Make use of the job post scraping feature to quickly grab some information from the posting to help you fill out the description.",
+        summary:"In the fast paced job hunting world, it can be difficult to keep track of all the information for the jobs that you are applying to. JobTracker is an easy to use app where you can save job postings to allow you to quickly and easily organize your job opportunities. Make use of the job post scraping feature to quickly grab some information from the posting to help you fill out the description.  Android app version created using React Native",
         technology:'HTML/CSS, JavaScript, React, React Router, MongoDB, Mongoose, Node, Express, bcrypt, JSON Web Tokens, Node-Fetch, Cheerio',
         disclaimer: ''
     },
