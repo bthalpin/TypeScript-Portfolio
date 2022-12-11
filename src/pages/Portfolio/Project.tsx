@@ -1,6 +1,6 @@
 import React, {FunctionComponent} from 'react';
 import {Link} from 'react-router-dom';
-import './projects.css';
+import styles from './projects.module.css';
 
 type ProjectProps = {
     projectInfo:{
@@ -20,11 +20,11 @@ const Project:FunctionComponent<ProjectProps> = ({projectInfo,id}) => {
     return(   
         <Link to={`/Project/${id}`}>
 
-        <div className={`projectCard ${projectInfo.class}`} >  
-            <section className="projectCardInfo">
+        <div className={`${styles.projectCard} ${styles[projectInfo.class]}`} >  
+            <section className={styles.projectCardInfo}>
                     
                     <div>
-                        <h2 className='projectName'>{projectInfo.name}</h2>
+                        <h2 className={styles.projectName}>{projectInfo.name}</h2>
                     </div>
                    
             </section>

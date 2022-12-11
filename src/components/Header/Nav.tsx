@@ -1,6 +1,6 @@
 import React,{FunctionComponent} from 'react';
 import { NavLink } from 'react-router-dom';
-
+import styles from './header.module.css'
 type NavProps = {
     navLink: string
 }
@@ -8,7 +8,7 @@ type NavProps = {
 const Nav: FunctionComponent<NavProps> =  ({navLink}) => {
 
     return (
-        <NavLink className={({isActive})=>isActive?'navLink selected':'navLink'} to={navLink==='About Me'?'/':`/${navLink}/`} >
+        <NavLink className={({isActive})=>isActive?`${styles.selected} ${styles.navLink}`:styles.navLink} to={navLink==='About Me'?'/':`/${navLink}/`} >
             {navLink}
         </NavLink>
     )

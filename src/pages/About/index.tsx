@@ -1,12 +1,12 @@
 import React from 'react';
-import './about.css';
+import styles from './about.module.css';
 
 function About () {
     
     return (
-        <div className="aboutContainer">
-            <div className="portraitContainer">
-                <div className="portrait">
+        <div className={styles.aboutContainer}>
+            <div className={styles.portraitContainer}>
+                <div className={styles.portrait}>
                     <img src='/images/Brian-portrait.png' alt="Brian Halpin portrait"></img>
                 </div>
                 

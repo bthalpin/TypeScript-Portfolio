@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from './Project';
 import {projectData} from './projectData';
-import './projects.css';
+import styles from './projects.module.css';
 
 
 interface ProjectData {
@@ -17,7 +17,7 @@ const Portfolio = () =>{
     
     // Returns each project in the projectData.js
     return (
-        <div className='projectContainer' >
+        <div className={styles.projectContainer} >
             {projectData.map((projectInfo:ProjectData,index:number)=>
                 <div key={index}>
                     <Project projectInfo={projectInfo} id={index}/>

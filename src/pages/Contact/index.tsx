@@ -1,6 +1,6 @@
 import React, {useState,useRef,useEffect} from 'react';
 import emailjs from 'emailjs-com'
-import './contact.css';
+import styles from './contact.module.css';
 
 
 function Contact () {
@@ -79,7 +79,7 @@ function Contact () {
 
     return (
         <div>
-            <form  ref={form} onSubmit={sendEmail} className="contactContainer">
+            <form  ref={form} onSubmit={sendEmail} className={styles.contactContainer}>
                 
                 <label htmlFor='name'>Name: </label>
                 <input
@@ -91,7 +91,7 @@ function Contact () {
                     onClick={()=>setErrorMessage('')}
 
                     placeholder='Name'
-                    className="contactInput contactCard"
+                    className={`${styles.contactInput} ${styles.contactCard}`}
                     required
                     >
                 </input>
@@ -105,7 +105,7 @@ function Contact () {
                     onBlur={checkInput}
                     onClick={()=>setErrorMessage('')}
                     placeholder='Email'
-                    className="contactInput contactCard"
+                    className={`${styles.contactInput} ${styles.contactCard}`}
                     required
                     >
                 </input>
@@ -117,13 +117,13 @@ function Contact () {
                     onBlur={checkInput}
                     onClick={()=>setErrorMessage('')}
                     onChange={handleInput}
-                    className="contactMessage contactCard"
+                    className={`${styles.contactMessage} ${styles.contactCard}`}
                 ></textarea>
 
                 <div>{errorMessage}</div>
                 <div>{confirmationMessage}</div>
-                <div className="contactBtnContainer">
-                    <button className="contactBtn">SUBMIT</button>
+                <div className={styles.contactBtnContainer}>
+                    <button className={styles.contactBtn}>SUBMIT</button>
                 </div>
             </form>
         </div>

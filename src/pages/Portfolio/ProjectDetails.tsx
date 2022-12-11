@@ -1,5 +1,5 @@
 import React from 'react';
-import './projects.css';
+import styles from './projects.module.css';
 import { projectData } from './projectData';
 import {useParams} from 'react-router-dom';
 
@@ -13,44 +13,44 @@ function ProjectDetails () {
     return(
         <div>
             
-            <h2 className="projectTitle">
+            <h2 className={styles.projectTitle}>
                  {projectData[numId].name}
             </h2>
 
-            <div className="projectDetailContainer">
-                <div className='projectDetailCard'>  
+            <div className={styles.projectDetailContainer}>
+                <div className={styles.projectDetailCard}>  
                     {numId===6?
-                        <div className={`projectPicture ${projectData[numId].class}`}></div>
+                        <div className={`${styles.projectPicture} ${styles[projectData[numId].class]}`}></div>
                     :
                     <a href={projectData[numId].deployed}>
-                        <div className={`projectPicture ${projectData[numId].class}`}></div>
+                        <div className={`${styles.projectPicture} ${styles[projectData[numId].class]}`}></div>
                     </a>
                     }
         
-                    <div className="projectBtnContainer">
+                    <div className={styles.projectBtnContainer}>
                         {projectData[numId].deployed === '#/Project/7'?
                         <></>
                         :
                         <div>
-                            <button onClick={()=>window.location.href=projectData[numId].deployed} className="projectBtn">Demo</button>
+                            <button onClick={()=>window.location.href=projectData[numId].deployed} className={styles.projectBtn}>Demo</button>
                         </div>
                         }
 
                         <div>
-                            <button onClick={()=>window.location.href=projectData[numId].github} className="projectBtn">Code</button>
+                            <button onClick={()=>window.location.href=projectData[numId].github} className={styles.projectBtn}>Code</button>
                         </div>
                     </div>
                 </div>
 
-                <div className='projectInfo'>  
-                    <div className='projectSummary'>
+                <div className={styles.projectInfo}>  
+                    <div className={styles.projectSummary}>
                         <p>{projectData[numId].summary}</p>
                         <p id="disclaimer">{projectData[numId].disclaimer}</p>
                     </div>
 
-                    <div className='projectTech'>
+                    <div className={styles.projectTech}>
                         <h3>Technology Used:</h3>
-                        <div className="techList">
+                        <div className={styles.techList}>
                             <p>{projectData[numId].technology}</p>
                         </div>
                     </div>     

@@ -1,20 +1,20 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import Nav from './Nav';
-import './header.css';
+import styles from './header.module.css';
 import {navigationLinks} from './navigationData';
 
 const Header = () => {
 
     return (
-        <div className="navContainer">
+        <div className={styles.navContainer}>
 
-            <Link to='/' className="navName">
+            <Link to='/' className={styles.navName}>
                 
                     HALPIN
 
             </Link>
-            <div className="navLinkContainer">  
+            <div className={styles.navLinkContainer}>  
 
                 {/* Navigation Links mapped from the navagationData.js file */}
                 {navigationLinks.map((navLink,index)=>
