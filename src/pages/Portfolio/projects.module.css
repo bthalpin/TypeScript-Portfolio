@@ -294,12 +294,8 @@
         transform: scale(1);
         
     }
-    .projectDetailContainer{
-        width:100vw;
-        display:block;
-    }
+
     .projectDetailCard{
-        width:100vw;
         height:300px;
     }
 
