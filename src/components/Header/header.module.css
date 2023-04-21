@@ -1,17 +1,18 @@
 .navContainer{
     display:flex;
     justify-content: space-between;
-    background-color: #425472;
+    background-color: #0f141b;
     color:rgb(214, 214, 214);
     border-bottom:1px solid #f48023;
     padding-left:1.4rem;
 }
-.navLinkContainer{
+.navLinkContainer, .navLinkOpen {
     display:flex;
     justify-content: space-around;
     align-items: center;
    
 }
+
 .navName{
     color:white;
     text-decoration: none;
@@ -28,28 +29,112 @@
     color:rgb(241, 241, 241);
     text-shadow: 0 0 0.5rem white;
 }
+
 .selected{
     color:white;
-    background-color: #5b74a0;
+    background-color: #fa660377;
     border-bottom:1px solid #f48023;
 
 }
 .navLink,.selected:hover{
     text-shadow: none;
 }
+.menu_container, .menu_open { 
+    width: 50px;
+    height: 60px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    margin-right: 1rem;
+    
+}
+.menu {
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+.menu::before, .menu::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    height: 5px;
+
+    background-color: #fff;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.menu::before {
+    transform: translateY(15px);
+}
+.menu::after {
+    transform: translateY(-15px);
+}
+.menu_open > .menu {
+    background-color: transparent;
+    height: 0;
+}
+.menu_open > .menu::before {
+    transform: rotate(45deg) ;
+
+}
+.menu_open > .menu::after {
+    transform: rotate(-45deg);
+
+}
+
 @media screen and (max-width:700px) {
-    .navContainer{
+.menu_container, .menu_open { 
+    display: flex;
+    
+}
+    /* .navContainer{
         display:block;
         padding:0 0 0.5rem;
-    }
+    } */
     .navLinkContainer{
-        margin-top:1rem;
+        /* display: none; */
+    }
+    /* .navLink {
+        padding: 1rem;
+        margin: 5rem;
     }
     .selected{
         padding:1.4rem 1.4rem 0.5rem
+    } */
+    .navLinkOpen {
+        background-color: #0f141b;
+        text-align: center;
+        border-bottom:1px solid #f48023;
+        border-left:1px solid #f48023;
+        display: block;
+        z-index: 1;
+    }
+    .navLinkContainer {
+        display: block;
+        position:absolute;
+        top: 64px;
+        right: -200px;
+        transition: all 0.1s ease-in-out;
+        z-index: 1;
+        opacity: 0;
+    }
+   .navLinkOpen {
+        position:absolute;
+        top: 64px;
+        right: 0;
+        transition: all 0.2s ease-in-out;
+    }
+    .navLink {
+        display: block;
+        
+        padding: 1rem 2rem;
     }
 }
-@media screen and (max-width:425px) {
+/* @media screen and (max-width:425px) {
     .navLinkContainer{
         margin-top:0.5rem;
     }
@@ -57,4 +142,4 @@
         padding:0.5rem;
         font-size: 0.89rem;;
     }
-}
+} */

@@ -1,9 +1,10 @@
 .footer{
-    background-color: #5b687e;
+    background-color: #192029;
     padding:0.5rem;
     position:absolute;
     bottom:0;
     width:100%;
+    max-width: var(--max-width);
     border-top:2px solid #f48023;
 }
 .footerContainer{

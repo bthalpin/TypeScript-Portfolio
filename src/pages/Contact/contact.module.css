@@ -5,7 +5,7 @@
     margin:2rem auto 5rem;
     padding:1rem 2rem;
     box-shadow: 0 0 0.5rem #a1a1a1;
-    background-color: #eeeded;
+    background-color: #a7958a;
     border-radius: 0.2rem;
     animation:contacts 0.5s
 }
@@ -24,13 +24,14 @@
     background-color: #f6f9fe;
     margin-top:0.2rem;
     margin-bottom:0.8rem;
-    box-shadow: 0 0 0.4rem #708ec2 inset;
+    box-shadow: 0 0 0.4rem #8f5e36 inset;
 
 }
 
 /* Text area */
 .contactMessage{
     height:10rem;
+    resize: vertical;
 }
 
 .contactInput:focus,.contactMessage:focus{

@@ -3,6 +3,10 @@
   padding:0;
   box-sizing: border-box;
 }
+:root {
+  --background:#dbdbdb;
+  --max-width: 1920px;
+}
 html{
   min-height:100vh;
   position: relative;
@@ -14,7 +18,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #dbdbdb;
+  background-color: #000;
+  max-width: var(--max-width);
+  margin: auto;
 }
 
 code {

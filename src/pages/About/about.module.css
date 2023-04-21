@@ -4,6 +4,7 @@
     justify-content: space-around;
     margin-bottom:7rem;
     animation:aboutPage 0.4s;
+    color: white;
 }
 @keyframes aboutPage {
     0%{
@@ -12,23 +13,25 @@
     }
 }
 .portraitContainer{
-    width:20rem;
-    height:21rem;
+    /* width:22vw;
+    height:23vw;
     padding:1rem;
     border-radius: 0.1rem;
     background-color: #e8e8e8;
-    margin:0 3rem;
-    
+    margin:0 3rem; */
+    margin-right: 2rem;
 }
 .portrait img{
-   width:18rem;
+    border: 1.5vw solid #e8e8e8;
+    width:20vw;
 }
 
 #name{
 
     font-size: 3rem;
 }
-#statement{
+.statement{
+    font-size: 2rem;
     margin-bottom:1rem;
 }
 @media screen and (max-width:800px) {
@@ -38,6 +41,12 @@
     }
     .portraitContainer{
         margin:0 auto 2rem;
+    }
+    #name{
+        font-size: 3rem;
+    }
+    .statement{
+        font-size: 1rem;
     }
 }
 @media screen and (max-width:400px) {
