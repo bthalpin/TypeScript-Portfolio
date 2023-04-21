@@ -280,23 +280,24 @@
 @media screen and (max-width:414px) {
     
     .projectCard{
-        margin:2rem 0;
+        /* margin:2rem 0;
         width:99vw;
-        height:75vw;
-        animation:projects 0.2s;
+        height:75vw; */
+        /* animation:projects 0.2s; */
 
     }
     .projectName{
-        border-bottom-left-radius: 0.1rem;
-        border-bottom-right-radius: 0.1rem;
+        /* border-bottom-left-radius: 0.1rem;
+        border-bottom-right-radius: 0.1rem; */
     }
     .projectCard:hover{
-        transform: scale(1);
+        /* transform: scale(1); */
         
     }
-
+    
     .projectDetailCard{
-        height:300px;
+        /* width:100vw;
+        height:300px; */
     }
 
 }
