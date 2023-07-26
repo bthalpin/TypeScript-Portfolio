@@ -78,7 +78,7 @@ function Contact () {
     }
 
     return (
-        <div>
+        <div className={styles.contactPage}>
             <form  ref={form} onSubmit={sendEmail} className={styles.contactContainer}>
                 
                 <label htmlFor='name'>Name: </label>

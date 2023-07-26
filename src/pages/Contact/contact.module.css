@@ -1,13 +1,19 @@
+.contactPage {
+    min-height: var(--min-height);
+    padding-top: 2rem;
+}
+
 /* Contact Form */
 .contactContainer{
     width:100vw;
     max-width: 550px;
-    margin:2rem auto 5rem;
+    margin:0 auto 5rem;
     padding:1rem 2rem;
     box-shadow: 0 0 0.5rem #a1a1a1;
-    background-color: #a7958a;
+    background-color: #dbdbdb;
     border-radius: 0.2rem;
-    animation:contacts 0.5s
+    animation:contacts 0.5s;
+    
 }
 @keyframes contacts {
     0%{
@@ -24,7 +30,7 @@
     background-color: #f6f9fe;
     margin-top:0.2rem;
     margin-bottom:0.8rem;
-    box-shadow: 0 0 0.4rem #8f5e36 inset;
+    box-shadow: 0 0 0.4rem #5b687e inset;
 
 }
 
@@ -37,7 +43,7 @@
 .contactInput:focus,.contactMessage:focus{
     outline:2px solid #5b687e;
     background-color: rgb(255, 255, 255);
-    box-shadow:  0 0 0.4rem #5b687e inset;
+    box-shadow:  0 0 0.4rem #1592cc inset;
 }
 
 /* Submit button */

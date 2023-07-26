@@ -11,6 +11,7 @@ interface ProjectData {
     deployed:string;
     github:string;
     class:string;
+    shortDescription:string;
     summary:string;
     technology:string;
     disclaimer:string;

@@ -2,9 +2,9 @@
     padding:3rem;
     display:flex;
     justify-content: space-around;
-    margin-bottom:7rem;
     animation:aboutPage 0.4s;
     color: white;
+    min-height: var(--min-height);
 }
 @keyframes aboutPage {
     0%{
@@ -22,17 +22,23 @@
     margin-right: 2rem;
 }
 .portrait img{
-    border: 1.5vw solid #e8e8e8;
-    width:20vw;
+    border: 0.1vw solid #353535;
+    width:15vw;
+    border-radius: 50%;
+    max-width: 25rem;
 }
 
 #name{
 
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-top: -16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .statement{
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-bottom:1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 @media screen and (max-width:800px) {
     .aboutContainer{
