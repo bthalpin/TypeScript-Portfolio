@@ -8,6 +8,7 @@ type ProjectProps = {
         deployed:string;
         github:string;
         class:string;
+        shortDescription:string;
         summary:string;
         technology:string;
         disclaimer:string;
@@ -15,22 +16,27 @@ type ProjectProps = {
     id:number;
 }
 const Project:FunctionComponent<ProjectProps> = ({projectInfo,id}) => {
-
+console.log(projectInfo)
     
-    return(   
-        <Link to={`/Project/${id}`}>
-
-        <div className={`${styles.projectCard} ${styles[projectInfo.class]}`} >  
-            <section className={styles.projectCardInfo}>
-                    
-                    <div>
-                        <h2 className={styles.projectName}>{projectInfo.name}</h2>
-                    </div>
-                   
-            </section>
-       
-        </div>
-                </Link>
+    return ( 
+        <>
+            <Link to={`/Project/${id}`}>
+                <div className={`${styles.projectCard} ${styles[projectInfo.class]}`} >  
+                    <section className={styles.projectCardInfo}>
+                            
+                            <div>
+                                <h2 className={styles.projectName}>{projectInfo.name}</h2>
+                            </div>
+                            
+            <div className={styles.projectSummary}>
+                <p  className={styles.projectSummaryText}>{projectInfo.shortDescription}</p>
+                <p>Technology: {projectInfo.technology}</p>
+            </div>
+                    </section>
+                
+                </div>
+            </Link>
+        </>  
         )
 }
 

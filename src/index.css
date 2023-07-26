@@ -6,6 +6,7 @@
 :root {
   --background:#dbdbdb;
   --max-width: 1920px;
+  --min-height: calc(100vh - 128px)
 }
 html{
   min-height:100vh;
@@ -18,7 +19,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000;
+  /* background-color: #000; */
+  background-color: #bbb;
   max-width: var(--max-width);
   margin: auto;
 }
@@ -26,4 +28,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  text-decoration: none;
 }

@@ -9,7 +9,8 @@
     display: flex;
     flex: none;
     overflow-x: hidden;
-    height: 500px;
+    min-height: var(--min-height);
+    /* height: 500px; */
     /* scroll-snap-type: x mandatory; */
 }
 .projectDetailContainer {
@@ -18,7 +19,7 @@
 }
 .projectCard {
     /* background-color: #000000; */
-    margin:1rem;
+    margin:1rem 1rem 20rem;
     width:400px;
     height:300px;
     text-align: center;
@@ -38,6 +39,10 @@
         opacity: 0;
     }
 }
+
+.test *{
+    color: #f48023;
+}
 .projectDetailCard{
     margin-top:1rem;
     width:800px;
@@ -55,11 +60,41 @@
     margin-top:4rem;
     text-align: center;
 }
-.projectSummary{
-
+.projectSummary {
+    display: none;
+    width: 80%;
+    margin: 7rem auto 0;
     padding:1rem;
+    text-align: center;
+    
+    text-decoration: none;
+    color:#2b2b2b;
+    position: absolute;
+    top: 20rem;
 }
-.projectCard::before,.projectPicture::before{
+
+
+.projectCard:hover .projectSummary {
+    display: block;
+}
+.projectSummaryText { 
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.projectCard::before {
+    content: '';
+    position: absolute;
+    top:320px;
+    left: 15px;
+    width: 370px;
+    height: 30px;
+    background: radial-gradient(#00000093, #00000083, #00000033, transparent, transparent);
+    /* background-color: rgba(0, 0, 0, 0.315); */
+    /* box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.123); */
+    border-radius: 200px 200px 40px 40px;
+}
+
+/* .projectCard::before,.projectPicture::before{
     content:'';
     background-color: #000000;
     position:absolute;
@@ -69,7 +104,7 @@
     bottom:0;
     z-index: -1;
     border-radius: 0.2rem;
-}
+} */
 
 .projectCard:hover{
     box-shadow: 0rem 0rem 1rem rgba(255, 123, 0, 0.623);
@@ -89,20 +124,21 @@
     color:#f48023;
     text-shadow: 0 0 3px black;
     position:absolute;
-    bottom:0;
-    left:0;
-    width:100%;
+    bottom:-100px;
+    left:10%;
+    width:80%;
     border-bottom-left-radius:0.2rem;
     border-bottom-right-radius:0.2rem;
     padding:0.5rem;
     /* box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.74); */
     /* border-top:2px solid #fec697; */
     transition: all 0.3s ease-in-out;
+    background-color: #353535;
 }
-.projectCard:hover .projectName{
+/* .projectCard:hover .projectName{
     background-color: #353535;
 
-}
+} */
 .projectTitle{
     font-weight:500;
     font-size: 2.5rem;
@@ -173,7 +209,7 @@
     z-index: -1;
     background-position: center;
     border-radius: 0.2rem;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     transition: all 0.3s ease-in-out;
 }
 
