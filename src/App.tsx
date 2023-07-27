@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { About, Portfolio, Contact, Resume,ProjectDetails } from './pages';
 import {Header, Footer} from './components'
 
 const App = () => {
-  
+    const [open, setOpen] = useState(false);
     return (
-        <div className="main">
+        <div className={`main ${open ? 'mainOpen' : ''}`}>
             <Router>
-            <Header />
+            <Header open={open} setOpen={setOpen} />
                 <Routes>
                     <Route 
                         path='/'

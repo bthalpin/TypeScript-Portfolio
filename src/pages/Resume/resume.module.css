@@ -126,6 +126,9 @@
     .resumeContainer{
         width:100vw;
     }
+    .resumeContainer:hover{
+        transform: scale(1);
+    }
     .resumeContainer img{
         width:100vw;
     }

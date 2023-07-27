@@ -11,13 +11,13 @@ function ProjectDetails () {
     
     const numId = id!==undefined?parseInt(id):0;
     return(
-        <div>
+        <div className={styles.projectDetailContainer} >
             
             <h2 className={styles.projectTitle}>
                  {projectData[numId].name}
             </h2>
 
-            <div className={styles.projectDetailContainer}>
+            <div className={styles.projectDetailCardContainer}>
                 <div className={styles.projectDetailCard}>  
                     {numId===6?
                         <div className={`${styles.projectPicture} ${styles[projectData[numId].class]}`}></div>
@@ -43,7 +43,7 @@ function ProjectDetails () {
                 </div>
 
                 <div className={styles.projectInfo}>  
-                    <div className={styles.projectSummary}>
+                    <div className={styles.s}>
                         <p>{projectData[numId].summary}</p>
                         <p id="disclaimer">{projectData[numId].disclaimer}</p>
                     </div>
