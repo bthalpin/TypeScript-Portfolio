@@ -20,7 +20,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-color: #000; */
-  background-color: #bbb;
+  background: linear-gradient(to bottom, #e4e4e4, #b3b3b3);
   max-width: var(--max-width);
   margin: auto;
 }
@@ -32,4 +32,8 @@ code {
 
 a {
   text-decoration: none;
+}
+
+.mainOpen {
+  margin-top: 4.05rem;
 }

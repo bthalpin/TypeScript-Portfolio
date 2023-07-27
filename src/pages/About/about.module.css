@@ -1,9 +1,8 @@
 .aboutContainer{
     padding:3rem;
-    display:flex;
-    justify-content: space-around;
+    
     animation:aboutPage 0.4s;
-    color: white;
+    color: #2b2b2b;
     min-height: var(--min-height);
 }
 @keyframes aboutPage {
@@ -12,71 +11,78 @@
         transform:translate(-100%);
     }
 }
-.portraitContainer{
-    /* width:22vw;
-    height:23vw;
-    padding:1rem;
-    border-radius: 0.1rem;
-    background-color: #e8e8e8;
-    margin:0 3rem; */
+.portraitContainer {
+    float: left;
     margin-right: 2rem;
 }
 .portrait img{
     border: 0.1vw solid #353535;
-    width:15vw;
-    border-radius: 50%;
-    max-width: 25rem;
+    width:17rem;
 }
 
 #name{
 
     font-size: 2.5rem;
-    margin-top: -16px;
+    margin-top: -1.5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .statement{
-    font-size: 1.75rem;
-    margin-bottom:1rem;
+    font-size: 1.5rem;
+    margin-bottom:1.5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 @media screen and (max-width:800px) {
     .aboutContainer{
         display:block;
-
+        padding: 1.5rem;
     }
-    .portraitContainer{
-        margin:0 auto 2rem;
+    .portraitContainer {
+        float: left;
+    }
+    .portrait {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .portrait img { 
+        width: 12rem
+        
     }
     #name{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .statement{
         font-size: 1rem;
     }
 }
+@media screen and (max-width:500px) {
+    .portrait img { 
+        width: 10rem
+        
+    }
+}
 @media screen and (max-width:400px) {
     .aboutContainer{
-        padding:0;
         animation:aboutPage 0.2s;
 
+        padding: 1.5rem 0.8rem;
     }
     .aboutContainer>section{
-        padding: 0 0.8rem;
         margin-bottom:5rem;
     }
-    .portraitContainer,.portrait{
-        width:100vw;
-        padding:0;
-        margin:2rem 0 3rem;
-        height:auto;
+    .portraitContainer {
+        margin-right: 1rem;
     }
     .portrait{
         display:flex;
         justify-content: center;
-        padding:1rem 0;
+        padding:0.3rem 0 0.5rem;
     }
     .portrait>img{
-        width:90vw;
+        width:8rem;
+        margin-right: 0rem;
+    }
+    #name {
+        font-size: 1.25rem;
     }
 }
