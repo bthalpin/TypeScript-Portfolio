@@ -112,15 +112,18 @@
         background-color: #0f141b;
         text-align: center;
         border-bottom:1px solid #f48023;
-        border-left:1px solid #f48023;
+        /* border-left:1px solid #f48023; */
         display: block;
         z-index: 1;
         height: auto;
         position:absolute;
-        top: 64px;
+        top: 60px;
         right: 0;
         transition: all 0.2s ease-in-out;
         height: 214px;
+    }
+    .navLinkOpen > div:first-child {
+        margin-top: 4px;
     }
     .navLink {
         display: block;
