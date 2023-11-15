@@ -1,11 +1,11 @@
 .footer{
-    background-color: #192029;
+    background-color: var(--dark);
     padding:0.5rem 0.5rem 1rem;
     /* position:absolute; */
     bottom:0;
     width:100%;
     max-width: var(--max-width);
-    border-top:2px solid #f48023;
+    border-top:2px solid var(--highlight);
 }
 .footerContainer{
     margin:auto;

@@ -47,7 +47,7 @@
 }
 
 .test *{
-    color: #f48023;
+    color: var(--highlight);
 }
 .projectDetailCard{
     margin-top:1rem;
@@ -55,7 +55,7 @@
     height:600px;
     text-align: center;
     border-radius:0.3rem;
-    border:1px solid #f48023;
+    border:1px solid var(--highlight);
     position:relative;
 }
 .projectPicture{
@@ -114,9 +114,9 @@
 } */
 
 .projectCard:hover{
-    box-shadow: 0rem 0rem 1rem rgba(255, 123, 0, 0.623);
+    box-shadow: 0rem 0rem 1rem var(--highlight-fade);
     transform: scale(1.02);
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .projectCard a{
@@ -128,7 +128,7 @@
     font-size: 1.5rem;
     font-weight: 500;
     /* background-color: #272727; */
-    color:#f48023;
+    color:var(--highlight);
     text-shadow: 0 0 3px black;
     position:absolute;
     bottom:-100px;
@@ -300,7 +300,7 @@
     border-bottom:3px solid #895226;
     border-right:3px solid #895226; */
     background-color: #425472;
-    border:1px solid #f48023;
+    border:1px solid var(--highlight);
     color:#eeeded;
     font-size:1.1rem;
     box-shadow:0.2rem 0.2rem 0.2rem gray;

@@ -1,9 +1,9 @@
 .navContainer {
     display:flex;
     justify-content: space-between;
-    background-color: #0f141b;
+    background-color: var(--dark);
     color:rgb(214, 214, 214);
-    border-bottom:1px solid #f48023;
+    border-bottom:1px solid var(--highlight);
     padding-left:1.4rem;
 }
 .navLinkContainer, .navLinkOpen {
@@ -32,8 +32,8 @@
 
 .selected{
     color:white;
-    background-color: #fa660377;
-    border-bottom:1px solid #f48023;
+    background-color: var(--highlight-fade);
+    border-bottom:1px solid var(--highlight);
 
 }
 .navLink,.selected:hover{
@@ -111,7 +111,7 @@
    .navLinkOpen {
         background-color: #0f141b;
         text-align: center;
-        border-bottom:1px solid #f48023;
+        border-bottom:1px solid var(--highlight);
         /* border-left:1px solid #f48023; */
         display: block;
         z-index: 1;
